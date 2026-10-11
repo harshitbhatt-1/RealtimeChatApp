@@ -61,6 +61,21 @@ const Profile = () => {
 
   }, [userData]);
 
+  useEffect(() => {
+  const loadUser = async () => {
+    try {
+      const result = await axios.get(`${serverUrl}/api/user/current`, {
+        withCredentials: true,
+      });
+      dispatch(setUserData(result.data.user));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  loadUser();
+}, [dispatch]);
+
 
   // -------------------------
   // Image change
