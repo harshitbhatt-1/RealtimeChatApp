@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FiSearch, FiLogOut, FiX } from "react-icons/fi";
-import "./Sidebar.css";
+
 
 import {
   setSelectedUser,
