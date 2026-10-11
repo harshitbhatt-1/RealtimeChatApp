@@ -15,7 +15,7 @@ import {
 
 import { serverUrl } from "../main";
 
-import "./Sidebar.css";
+import "./SideBar.css";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
