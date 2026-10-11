@@ -1,0 +1,95 @@
+.message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.receiver-row {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: min(70%, 420px);
+  min-width: 0;
+  padding: 10px 13px;
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.receiver-bubble {
+  background: #ffffff;
+  color: #253447;
+  border-bottom-left-radius: 4px;
+}
+
+.message-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.message-image {
+  display: block;
+  max-width: 100%;
+  max-height: 280px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.message-time {
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 10px;
+  opacity: 0.65;
+}
+
+.message-profile-avatar {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.message-profile-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message-profile-avatar span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .message-bubble {
+    max-width: 85%;
+  }
+
+  .message-profile-avatar {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+}
